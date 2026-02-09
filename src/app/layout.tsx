@@ -52,10 +52,10 @@ export default function RootLayout({
               </a>
               <div className="hidden sm:flex items-center gap-6">
                 <a
-                  href="/#om"
+                  href="/om-produktpass"
                   className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
                 >
-                  Om verktyget
+                  Om produktpass
                 </a>
                 <a
                   href="/#eu-krav"
