@@ -14,9 +14,9 @@ interface ResultsTabsProps {
 }
 
 const TABS = [
-  { id: "overview", label: "Oversikt" },
+  { id: "overview", label: "Översikt" },
   { id: "materials", label: "Material" },
-  { id: "sustainability", label: "Hallbarhet" },
+  { id: "sustainability", label: "Hållbarhet" },
   { id: "compliance", label: "Compliance" },
 ];
 
@@ -63,7 +63,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
                   {aiResponse.sustainabilityScore}
                 </p>
                 <p className="text-xs text-primary-600 mt-1">
-                  Hallbarhetspoang
+                  Hållbarhetspoäng
                 </p>
               </div>
               <div className="bg-secondary-50 rounded-xl p-4 text-center">
@@ -79,7 +79,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
                   {quizData.lifespanYears}
                 </p>
                 <p className="text-xs text-accent-600 mt-1">
-                  Ar livslangd
+                  År livslängd
                 </p>
               </div>
               <div className="bg-gray-50 rounded-xl p-4 text-center">
@@ -154,7 +154,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
             {quizData.customMaterial && (
               <div>
                 <h4 className="text-sm font-semibold text-gray-900 mb-2">
-                  Ovriga material
+                  Övriga material
                 </h4>
                 <p className="text-sm text-gray-600 bg-gray-50 rounded-lg p-3">
                   {quizData.customMaterial}
@@ -203,7 +203,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
             {quizData.suppliers && (
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Leverantorer
+                  Leverantörer
                 </h3>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-sm text-gray-700 whitespace-pre-line">
@@ -273,13 +273,13 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
                 </div>
               </div>
               <p className="text-lg font-semibold text-gray-900">
-                Hallbarhetspoang
+                Hållbarhetspoäng
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Hallbarhetsanalys
+                Hållbarhetsanalys
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 {aiResponse.sustainabilityAnalysis}
@@ -318,7 +318,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Miljopaverkan
+                Miljöpåverkan
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 {aiResponse.environmentalImpact}
@@ -327,7 +327,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                End-of-Life
+                Uttjänt produkt
               </h3>
               <div className="bg-primary-50 rounded-lg p-4">
                 <p className="text-sm text-gray-700">
@@ -430,7 +430,7 @@ export default function ResultsTabs({ result }: ResultsTabsProps) {
                         {item.status === "complete"
                           ? "Komplett"
                           : item.status === "required"
-                          ? "Kravs"
+                          ? "Krävs"
                           : "Saknas"}
                       </span>
                     </div>

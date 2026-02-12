@@ -71,8 +71,8 @@ export default function QuizPage() {
       case 0:
         return (
           <QuizStep
-            title="Vilken kategori tillhor din produkt?"
-            subtitle="Valj den kategori som bast beskriver din produkt."
+            title="Vilken kategori tillhör din produkt?"
+            subtitle="Välj den kategori som bäst beskriver din produkt."
             onNext={nextStep}
             isValid={state.category !== ""}
             isFirst
@@ -140,8 +140,8 @@ export default function QuizPage() {
       case 2:
         return (
           <QuizStep
-            title="Vilka material innehaller produkten?"
-            subtitle="Valj alla material som ingar. Du kan valja flera."
+            title="Vilka material innehåller produkten?"
+            subtitle="Välj alla material som ingår. Du kan välja flera."
             onNext={nextStep}
             onBack={prevStep}
             isValid={state.materials.length > 0}
@@ -188,14 +188,14 @@ export default function QuizPage() {
                 ))}
               </div>
               <div>
-                <label className="label-text">Ovriga material</label>
+                <label className="label-text">Övriga material</label>
                 <input
                   type="text"
                   value={state.customMaterial}
                   onChange={(e) =>
                     updateState({ customMaterial: e.target.value })
                   }
-                  placeholder="Ange eventuella ovriga material"
+                  placeholder="Ange eventuella övriga material"
                   className="input-field"
                 />
               </div>
@@ -207,7 +207,7 @@ export default function QuizPage() {
         return (
           <QuizStep
             title="Var tillverkas produkten?"
-            subtitle="Valj ursprungsland for tillverkning."
+            subtitle="Välj ursprungsland för tillverkning."
             onNext={nextStep}
             onBack={prevStep}
             isValid={state.originCountry !== ""}
@@ -246,8 +246,8 @@ export default function QuizPage() {
       case 4:
         return (
           <QuizStep
-            title="Har produkten nagon hallbarhetscertifiering?"
-            subtitle="Valj alla certifieringar som produkten har."
+            title="Har produkten någon hållbarhetscertifiering?"
+            subtitle="Välj alla certifieringar som produkten har."
             onNext={nextStep}
             onBack={prevStep}
             isValid={state.certifications.length > 0}
@@ -310,8 +310,8 @@ export default function QuizPage() {
       case 5:
         return (
           <QuizStep
-            title="Hur latt ar produkten att reparera?"
-            subtitle="Bedom hur enkelt det ar for en konsument att reparera produkten."
+            title="Hur lätt är produkten att reparera?"
+            subtitle="Bedöm hur enkelt det är för en konsument att reparera produkten."
             onNext={nextStep}
             onBack={prevStep}
             isValid={true}
@@ -319,10 +319,10 @@ export default function QuizPage() {
             <div className="space-y-6">
               <div className="flex justify-between items-center">
                 <span className="text-sm text-gray-500">
-                  Omojlig att reparera
+                  Omöjlig att reparera
                 </span>
                 <span className="text-sm text-gray-500">
-                  Mycket latt
+                  Mycket lätt
                 </span>
               </div>
               <div className="flex justify-between gap-3">
@@ -345,14 +345,14 @@ export default function QuizPage() {
               <div className="text-center">
                 <span className="text-lg font-semibold text-primary-600">
                   {state.repairabilityScore === 1
-                    ? "Omojlig att reparera"
+                    ? "Omöjlig att reparera"
                     : state.repairabilityScore === 2
-                    ? "Svar att reparera"
+                    ? "Svår att reparera"
                     : state.repairabilityScore === 3
-                    ? "Medelsvar"
+                    ? "Medelsvår"
                     : state.repairabilityScore === 4
-                    ? "Latt att reparera"
-                    : "Mycket latt att reparera"}
+                    ? "Lätt att reparera"
+                    : "Mycket lätt att reparera"}
                 </span>
               </div>
             </div>
@@ -362,15 +362,15 @@ export default function QuizPage() {
       case 6:
         return (
           <QuizStep
-            title="Vad ar produktens forvantade livslangd?"
-            subtitle="Ange i antal ar."
+            title="Vad är produktens förväntade livslängd?"
+            subtitle="Ange i antal år."
             onNext={nextStep}
             onBack={prevStep}
             isValid={state.lifespanYears.trim() !== ""}
           >
             <div className="space-y-4">
               <div>
-                <label className="label-text">Forvantad livslangd (ar) *</label>
+                <label className="label-text">Förväntad livslängd (år) *</label>
                 <input
                   type="number"
                   value={state.lifespanYears}
@@ -394,7 +394,7 @@ export default function QuizPage() {
                         : "border-gray-200 hover:border-primary-200 text-gray-600"
                     }`}
                   >
-                    {years} ar
+                    {years} år
                   </button>
                 ))}
               </div>
@@ -405,8 +405,8 @@ export default function QuizPage() {
       case 7:
         return (
           <QuizStep
-            title="Hur atervinningsbar ar produkten?"
-            subtitle="Valj alla alternativ som stammer."
+            title="Hur återvinningsbar är produkten?"
+            subtitle="Välj alla alternativ som stämmer."
             onNext={nextStep}
             onBack={prevStep}
             isValid={state.recyclability.length > 0}
@@ -457,27 +457,27 @@ export default function QuizPage() {
       case 8:
         return (
           <QuizStep
-            title="Leverantorskedja"
-            subtitle="Lista dina huvudleverantorer (valfritt men rekommenderas for compliance)."
+            title="Leverantörskedja"
+            subtitle="Lista dina huvudleverantörer (valfritt men rekommenderas för compliance)."
             onNext={nextStep}
             onBack={prevStep}
             isValid={true}
           >
             <div>
               <label className="label-text">
-                Huvudleverantorer (valfritt)
+                Huvudleverantörer (valfritt)
               </label>
               <textarea
                 value={state.suppliers}
                 onChange={(e) =>
                   updateState({ suppliers: e.target.value })
                 }
-                placeholder="T.ex.&#10;Tranemo Tra AB - Tra/virke&#10;Smalands Metall - Metallkomponenter&#10;Recycle AB - Atervinning"
+                placeholder="T.ex.&#10;Tranemo Trä AB - Trä/virke&#10;Smålands Metall - Metallkomponenter&#10;Recycle AB - Återvinning"
                 rows={5}
                 className="input-field resize-none"
               />
               <p className="mt-2 text-xs text-gray-500">
-                Ange en leverantor per rad. Inkludera garna vad de levererar.
+                Ange en leverantör per rad. Inkludera gärna vad de levererar.
               </p>
             </div>
           </QuizStep>
@@ -486,8 +486,8 @@ export default function QuizPage() {
       case 9:
         return (
           <QuizStep
-            title="Foretagsinformation"
-            subtitle="Ange ditt foretags kontaktuppgifter for produktpasset."
+            title="Företagsinformation"
+            subtitle="Ange ditt företags kontaktuppgifter för produktpasset."
             onNext={handleSubmit}
             onBack={prevStep}
             isValid={
@@ -498,14 +498,14 @@ export default function QuizPage() {
           >
             <div className="space-y-4">
               <div>
-                <label className="label-text">Foretagsnamn *</label>
+                <label className="label-text">Företagsnamn *</label>
                 <input
                   type="text"
                   value={state.companyName}
                   onChange={(e) =>
                     updateState({ companyName: e.target.value })
                   }
-                  placeholder="T.ex. Smalands Mobler AB"
+                  placeholder="T.ex. Smålands Möbler AB"
                   className="input-field"
                 />
               </div>
@@ -529,7 +529,7 @@ export default function QuizPage() {
                   onChange={(e) =>
                     updateState({ contactPerson: e.target.value })
                   }
-                  placeholder="Fornamn Efternamn"
+                  placeholder="Förnamn Efternamn"
                   className="input-field"
                 />
               </div>
@@ -541,7 +541,7 @@ export default function QuizPage() {
                   onChange={(e) =>
                     updateState({ email: e.target.value })
                   }
-                  placeholder="namn@foretag.se"
+                  placeholder="namn@företag.se"
                   className="input-field"
                 />
               </div>

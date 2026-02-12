@@ -96,7 +96,7 @@ export default function RootLayout({
               </div>
               <p className="text-sm text-gray-500">
                 &copy; {new Date().getFullYear()} Digitala Produktpass. Gratis
-                verktyg for svenska tillverkare.
+                verktyg för svenska tillverkare.
               </p>
             </div>
           </div>

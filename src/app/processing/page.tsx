@@ -6,9 +6,9 @@ import { loadQuizState, clearQuizState, saveResult, generateId } from "@/lib/uti
 
 const STEPS = [
   "Analyserar produktinformation...",
-  "Bedomer material och hallbarhet...",
+  "Bedömer material och hållbarhet...",
   "Kontrollerar EU-compliance...",
-  "Genererar hallbarhetsanalys...",
+  "Genererar hållbarhetsanalys...",
   "Skapar digitalt produktpass...",
 ];
 
@@ -96,14 +96,14 @@ export default function ProcessingPage() {
             </svg>
           </div>
           <h2 className="text-xl font-bold text-gray-900 mb-2">
-            Nagot gick fel
+            Något gick fel
           </h2>
           <p className="text-gray-600 mb-6">{error}</p>
           <button
             onClick={() => router.push("/quiz")}
             className="btn-primary"
           >
-            Forrsok igen
+            Försök igen
           </button>
         </div>
       </div>

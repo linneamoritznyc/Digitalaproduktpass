@@ -18,24 +18,24 @@ export default function Home() {
             Skapa digitala produktpass
             <br />
             <span className="text-primary-600">
-              for EU-compliance pa minuter
+              för EU-regelefterlevnad på minuter
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl leading-8 text-gray-600 max-w-2xl mx-auto text-balance">
-            Folj EU:s nya krav pa produkttransparens. Svara pa 10 fragor om din
-            produkt och fa ett komplett digitalt produktpass med QR-kod och
+            Följ EU:s nya krav på produkttransparens. Svara på 10 frågor om din
+            produkt och få ett komplett digitalt produktpass med QR-kod och
             PDF-export.
           </p>
           <div className="mt-10 flex items-center justify-center gap-4 flex-wrap">
             <Link href="/quiz" className="btn-primary text-lg px-8 py-4">
-              Borja skapa produktpass &rarr;
+              Börja skapa produktpass &rarr;
             </Link>
             <a href="#om" className="btn-secondary text-lg px-8 py-4">
-              Las mer
+              Läs mer
             </a>
           </div>
           <p className="mt-4 text-sm text-gray-500">
-            Gratis verktyg for svenska tillverkare
+            Gratis verktyg för svenska tillverkare
           </p>
         </div>
       </section>
@@ -45,11 +45,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Varfor Digitala Produktpass?
+              Varför Digitala Produktpass?
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              EU krav att alla produkter ska ha digitala pass med information om
-              material, hallbarhet och cirkularietet.
+              EU kräver att alla produkter ska ha digitala pass med information om
+              material, hållbarhet och cirkularitet.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -70,11 +70,11 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                EU-Compliant
+                Uppfyller EU-krav
               </h3>
               <p className="text-sm text-gray-600">
-                Mot EU:s Digital Product Passport-krav som trader i kraft
-                2026-2027. Automatisk compliance-kontroll.
+                Möt EU:s Digital Product Passport-krav som träder i kraft
+                2027. Automatisk efterlevnadskontroll.
               </p>
             </div>
 
@@ -98,8 +98,8 @@ export default function Home() {
                 Snabbt &amp; Enkelt
               </h3>
               <p className="text-sm text-gray-600">
-                Quiz-baserat verktyg. Svara pa 10 fragor, fa komplett
-                produktpass pa minuter.
+                Frågebaserat verktyg. Svara på 10 frågor, få komplett
+                produktpass på minuter.
               </p>
             </div>
 
@@ -120,11 +120,11 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Hallbarhetsanalys
+                Hållbarhetsanalys
               </h3>
               <p className="text-sm text-gray-600">
-                AI-driven analys av din produkts miljopaverkan och
-                forbattringsmojligheter.
+                AI-baserad analys av din produkts miljöpåverkan och
+                förbättringsmöjligheter.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export default function Home() {
                 Delbart &amp; Skannerbart
               </h3>
               <p className="text-sm text-gray-600">
-                QR-koder for enkel delning. PDF-export for dokumentation och
+                QR-koder för enkel delning. PDF-export för dokumentation och
                 tryck.
               </p>
             </div>
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Sa har fungerar det
+              Så här fungerar det
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -175,11 +175,11 @@ export default function Home() {
                 1
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Svara pa fragor
+                Svara på frågor
               </h3>
               <p className="text-gray-600">
-                Besvara 10 enkla fragor om din produkt - material, tillverkning,
-                hallbarhet och mer.
+                Besvara 10 enkla frågor om din produkt - material, tillverkning,
+                hållbarhet och mer.
               </p>
             </div>
             <div className="text-center">
@@ -190,8 +190,8 @@ export default function Home() {
                 AI genererar pass
               </h3>
               <p className="text-gray-600">
-                Var AI analyserar dina svar och genererar ett komplett digitalt
-                produktpass med hallbarhetsbedomning.
+                Vår AI analyserar dina svar och genererar ett komplett digitalt
+                produktpass med hållbarhetsbedömning.
               </p>
             </div>
             <div className="text-center">
@@ -202,14 +202,14 @@ export default function Home() {
                 Exportera &amp; dela
               </h3>
               <p className="text-gray-600">
-                Ladda ner som PDF, fa en QR-kod, och dela ditt produktpass med
+                Ladda ner som PDF, få en QR-kod, och dela ditt produktpass med
                 kunder och partners.
               </p>
             </div>
           </div>
           <div className="text-center mt-12">
             <Link href="/quiz" className="btn-primary text-lg px-8 py-4">
-              Borja nu &mdash; det ar gratis &rarr;
+              Börja nu &mdash; det är gratis &rarr;
             </Link>
           </div>
         </div>
@@ -221,23 +221,23 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center rounded-full bg-accent-50 px-4 py-1.5 text-sm font-medium text-accent-700 ring-1 ring-inset ring-accent-200 mb-4">
-                EU-forordning 2024/1781
+                EU-förordning 2024/1781
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                EU:s krav pa Digitala Produktpass
+                EU:s krav på Digitala Produktpass
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Fran 2026-2027 maste alla produkter som saljs inom EU ha ett
-                digitalt produktpass. Kravet ar en del av EU:s Ecodesign for
+                Från 2027 måste alla produkter som säljs inom EU ha ett
+                digitalt produktpass. Kravet är en del av EU:s Ecodesign for
                 Sustainable Products Regulation (ESPR).
               </p>
               <ul className="space-y-4">
                 {[
-                  "Material och ursprung - Full transparens om vad produkten innehaller",
-                  "Hallbarhet och miljopaverkan - Dokumenterad miljoanalys",
-                  "Reparerbarhet - Information om reparationsmojligheter",
-                  "Cirkular ekonomi - Atervinnings- och ateranvandningsinstruktioner",
-                  "Leverantorskedja - Transparens genom hela vardekedjan",
+                  "Material och ursprung - Full transparens om vad produkten innehåller",
+                  "Hållbarhet och miljöpåverkan - Dokumenterad miljöanalys",
+                  "Reparerbarhet - Information om reparationsmöjligheter",
+                  "Cirkulär ekonomi - Återvinnings- och återanvändningsinstruktioner",
+                  "Leverantörskedja - Transparens genom hela värdekedjan",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <svg
@@ -270,18 +270,18 @@ export default function Home() {
                     desc: "EU:s Ecodesign for Sustainable Products Regulation antogs",
                   },
                   {
-                    year: "2026",
-                    title: "Forsta produktkategorier",
-                    desc: "Batterier, textilier och elektronik omfattas forst",
+                    year: "2027",
+                    title: "Första produktkategorier",
+                    desc: "Batterier och textilier omfattas först",
                   },
                   {
-                    year: "2027",
+                    year: "2028",
                     title: "Utvidgat krav",
-                    desc: "Fler produktkategorier inkluderas successivt",
+                    desc: "Elektronik och fler kategorier inkluderas",
                   },
                   {
                     year: "2030",
-                    title: "Full tacking",
+                    title: "Full täckning",
                     desc: "Alla relevanta produktkategorier ska ha DPP",
                   },
                 ].map((item, i) => (
@@ -309,11 +309,11 @@ export default function Home() {
       <section className="py-20 bg-primary-600">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Redo att skapa ditt forsta produktpass?
+            Redo att skapa ditt första produktpass?
           </h2>
           <p className="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
-            Det tar bara nagra minuter. Svara pa fragor om din produkt och fa
-            ett komplett digitalt produktpass med AI-driven analys.
+            Det tar bara några minuter. Svara på frågor om din produkt och få
+            ett komplett digitalt produktpass med AI-baserad analys.
           </p>
           <Link
             href="/quiz"

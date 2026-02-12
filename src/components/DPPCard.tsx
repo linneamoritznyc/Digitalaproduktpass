@@ -119,7 +119,7 @@ export default function DPPCard({ result }: DPPCardProps) {
   const copyLink = async () => {
     if (shareUrl) {
       await navigator.clipboard.writeText(shareUrl);
-      alert("Lank kopierad!");
+      alert("Länk kopierad!");
     }
   };
 

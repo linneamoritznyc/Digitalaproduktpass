@@ -74,12 +74,12 @@ export default function PDFExport({ result }: PDFExportProps) {
       doc.setFontSize(12);
       doc.setTextColor(5, 150, 105);
       doc.text(
-        `Hallbarhetspoang: ${aiResponse.sustainabilityScore}/100 - ${getScoreLabel(aiResponse.sustainabilityScore)}`,
+        `Hållbarhetspoäng: ${aiResponse.sustainabilityScore}/100 - ${getScoreLabel(aiResponse.sustainabilityScore)}`,
         margin + 5,
         y + 8
       );
       doc.text(
-        `Reparerbarhet: ${quizData.repairabilityScore}/5 | Livslangd: ${quizData.lifespanYears} ar`,
+        `Reparerbarhet: ${quizData.repairabilityScore}/5 | Livslängd: ${quizData.lifespanYears} år`,
         margin + 5,
         y + 15
       );
@@ -113,7 +113,7 @@ export default function PDFExport({ result }: PDFExportProps) {
 
       doc.setFontSize(13);
       doc.setTextColor(31, 41, 55);
-      doc.text("EU Compliance-checklista", margin, y);
+      doc.text("EU-kravlista", margin, y);
       y += 7;
 
       doc.setFontSize(10);
@@ -172,7 +172,7 @@ export default function PDFExport({ result }: PDFExportProps) {
       y += 5;
       doc.setFontSize(13);
       doc.setTextColor(31, 41, 55);
-      doc.text("Miljopaverkan", margin, y);
+      doc.text("Miljöpåverkan", margin, y);
       y += 7;
 
       doc.setFontSize(10);
@@ -192,7 +192,7 @@ export default function PDFExport({ result }: PDFExportProps) {
 
       doc.setFontSize(13);
       doc.setTextColor(31, 41, 55);
-      doc.text("End-of-Life Instruktioner", margin, y);
+      doc.text("Instruktioner för uttjänt produkt", margin, y);
       y += 7;
 
       doc.setFontSize(10);
@@ -220,7 +220,7 @@ export default function PDFExport({ result }: PDFExportProps) {
       doc.save(`${result.dppId}-produktpass.pdf`);
     } catch (error) {
       console.error("PDF export failed:", error);
-      alert("Kunde inte skapa PDF. Forsok igen.");
+      alert("Kunde inte skapa PDF. Försök igen.");
     }
   };
 
